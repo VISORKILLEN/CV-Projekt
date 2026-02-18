@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: rgb(73, 71, 71);
+}
+
+/*Navigation*/
+
+nav {
+  background: #222;
+  padding: 30px;
+}
+
+nav a:hover {
+  color: #4c1b74;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 350;
+}
+
+nav a.active {
+  border-bottom: 2px solid #4c1b74;
+}
+
+/*Cointainer*/
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+/*Two columns*/
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.two-columns img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px black;
+}
+
+/*Cards*/
+.card {
+  background: whitesmoke;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px black;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2 ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px black;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.card h3 {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+/*Buttons*/
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #4c1b74;
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/*Portfolio*/
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/*Modal*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+}
+
+.modal:target {
+  display: block;
+}
+
+.modal-content {
+  background: whitesmoke;
+  width: 80%;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/*responsive*/
+
+@media (max-width: 768px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

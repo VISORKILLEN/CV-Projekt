@@ -1,0 +1,104 @@
+{
+  "education": [
+    {
+      "title": "Systemutveckling.NET",
+      "period": "Pågående 2025-2027",
+      "description": [
+        "Studerar systemutveckling med inriktning mot .NET",
+        "Fördjupning inom C# och objektorienterad programmering (OOP)",
+        "Arbetar med databaser och SQL",
+        "Modern mjukvaruutveckling och projektarbete",
+        "Kunskaper inom frontend och responsiv design"
+      ]
+    },
+    {
+      "title": "LBS Gymnasieskola - E-sport Event",
+      "period": "Examen 2021",
+      "description": [
+        "Gymnasieutbildning med inriktning mot e-sport och event",
+        "Planering och genomförande av evenemang",
+        "Projektarbete och samarbete i team"
+      ]
+    },
+    {
+      "title": "UF-Företagande",
+      "period": "2020-2021",
+      "description": [
+        "Drev UF-företag genom utbildningen Smart Företagande (ekonomiutbildning)",
+        "Arbetade med budgetering och ekonomisk planering",
+        "Marknadsföring och försäljning",
+        "Projektledning och genomförande av evenemang"
+      ]
+    }
+  ],
+
+  "certificates": [
+    "B-Körkort",
+    "Truckkort A1-4, B1",
+    "UF-Företagande - Ekonomiutbildning: Smart Föret"
+  ],
+
+  "languages": [
+    {
+      "language": "Svenska",
+      "level": "Modersmål"
+    },
+    {
+      "language": "Engelska",
+      "level": "Flytande i tal och skrift"
+    }
+  ],
+
+  "work": [
+    {
+      "title": "Elgiganten Varberg",
+      "period": "September 2023 - Juli 2025",
+      "description": [
+        "Arbetade som Service Advisor och senare Sales Advisor",
+        "Ansvarade för varumottagning, servicehantering och kundsupport",
+        "Hjälpte kunder med abonnemang, felsökning och produktval"
+      ]
+    },
+
+    {
+      "title": "Kjell & Comapny",
+      "period": "Mars 2023 - September 2023",
+      "description": [
+        "Säljare med fokus på kundservice och rådgivning inom elektronik",
+        "Genomförde interna utbildningar inom teknik och försäljning"
+      ]
+    },
+
+    {
+      "title": "Lernia AB",
+      "period": "2022",
+      "description": [
+        "Arbete på Strängbetong AB och Cycleurope Sverige AB",
+        "Läste ritningar och följde produktionsflöden",
+        "Monterade produkter inom uppsatta tidsramar"
+      ]
+    },
+    {
+      "title": "Gekås Ullared AB",
+      "period": "2018, 2020, 2021",
+      "description": [
+        "Lager- och butiksarbete",
+        "Påfyllning av varor och sortering",
+        "Kundservice"
+      ]
+    },
+    {
+      "title": "Rasta Ullared AB",
+      "period": "Somrar 2018 & 2019",
+      "description": [
+        "Restaurang- och butiksarbete",
+        "Kassahantering, servering och kundbemötande"
+      ]
+    },
+    {
+      "title": "Varbergs Bostad AB",
+      "period": "Sommar 2017",
+      "description": ["Trädgårdsskötsel, målning och yttre fastighetsunderhåll"]
+    }
+  ]
+}

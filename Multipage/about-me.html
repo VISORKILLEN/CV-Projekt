@@ -2,6 +2,7 @@
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Om mig</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,56 +13,82 @@
     />
 
     <link rel="stylesheet" href="../CSS-CV/style.css" />
+    <script src="../CV-JS/script.js" defer></script>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Hem</a></li>
-        <li><a href="about-me.html" class="active">Om mig</a></li>
-        <li><a href="CV.html">CV</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Kontakt</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="about-me.html" class="active">Om mig</a></li>
+          <li><a href="CV.html">CV</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="container">
-      <h1>Om mig</h1>
-      <div class="two-columns">
-        <p>
-          Jag heter Viktor Gustafsson och är uppvuxen i Varberg. Idag studerar
-          jag Systemutveckling med inriktning .NET där jag fördjupar mig inom
-          C#, objektorienterad programmering, databaser och grunderna inom
-          frontendutveckling.
-        </p>
+    <main>
+      <section class="container">
+        <h1>Om mig</h1>
+        <div class="two-columns">
+          <article>
+            <p>
+              Jag heter Viktor Gustafsson och är uppvuxen i Varberg. Idag
+              studerar jag Systemutveckling med inriktning .NET där jag
+              fördjupar mig inom C#, objektorienterad programmering, databaser
+              och grunderna inom frontendutveckling.
+            </p>
+          </article>
 
-        <p>
-          Innan jag började studera har jag arbetat inom service, försäljning
-          och industri bland annat på Elgiganten och Kjell & Company. Där
-          utvecklade jag en stark känsla för kundbemötande, problemlösning och
-          att arbeta strukturerat även i ett högt tempo.
-        </p>
+          <article>
+            <p>
+              Innan jag började studera har jag arbetat inom service,
+              försäljning och industri bland annat på Elgiganten och Kjell &
+              Company. Där utvecklade jag en stark känsla för kundbemötande,
+              problemlösning och att arbeta strukturerat även i ett högt tempo.
+            </p>
+          </article>
 
-        <p>
-          Jag är en lösningsorienterad och ansvarstagande person som trivs både
-          med självständigt arbete och i team. Att ständigt utvecklas och lära
-          mig nya saker driver mig framåt särskilt inom teknik och
-          systemutveckling.
-        </p>
-      </div>
+          <article>
+            <p>
+              Jag är en lösningsorienterad och ansvarstagande person som trivs
+              både med självständigt arbete och i team. Att ständigt utvecklas
+              och lära mig nya saker driver mig framåt särskilt inom teknik och
+              systemutveckling.
+            </p>
+          </article>
+        </div>
+      </section>
 
-      <div class="card">
-        <h2>Fritid & Intressen</h2>
-        <p>
-          På fritiden tränar jag regelbundet då jag tycker det är viktigt att
-          hålla både kroppen och huvudet i form. Träningen hjälper mig att hålla
-          fokus och disciplin något jag även tar med mig in i studier och
-          arbetsliv.
-        </p>
+      <section class="container">
+        <div class="card">
+          <h2>Fritid & Intressen</h2>
+          <p>
+            På fritiden tränar jag regelbundet då jag tycker det är viktigt att
+            hålla både kroppen och huvudet i form. Träningen hjälper mig att
+            hålla fokus och disciplin något jag även tar med mig in i studier
+            och arbetsliv.
+          </p>
 
-        <p>
-          Jag spelar också gärna discgolf när jag får chansen. Det är en social
-          aktivitet som kombinerar strategi, tävling samt mer tid i naturen.
-        </p>
+          <p>
+            Jag spelar också gärna discgolf när jag får chansen. Det är en
+            social aktivitet som kombinerar strategi, tävling samt mer tid i
+            naturen.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>© 2026 Viktor Gustafsson</p>
+    </footer>
+
+    <div id="eggModal" class="modal">
+      <div class="modal-content">
+        <h2>Easter Egg hittat !!!</h2>
+        <p>Why was 6 afraid of 7? Because 7 8 9 (seven ate nine ;)</p>
+        <button id="closeModal">Stäng</button>
       </div>
     </div>
   </body>

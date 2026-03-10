@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error loading CV data:", error));
 
-  // --- GitHub Projects Gallery with Delay ---
+  // GitHub Projects Gallery with Delay
   const container = document.getElementById("githubProjects");
   const loading = document.getElementById("loading");
 
@@ -101,10 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         console.error("GitHub Fetch Error:", error);
       });
-  }, 2000); // 2000ms delay
+    // 2000ms delay
+  }, 2000);
 });
 
-// --- Easter Egg: Key Sequence "789" ---
+// Easter Egg: Key Sequence "789"
 let secretCode = "";
 const correctCode = "789";
 const eggModal = document.getElementById("eggModal");
@@ -112,7 +113,8 @@ const closeBtn = document.getElementById("closeModal");
 
 document.addEventListener("keydown", (event) => {
   secretCode += event.key;
-  secretCode = secretCode.slice(-3); // Only store last 3 keys
+  // save only last 3 keys
+  secretCode = secretCode.slice(-3);
 
   if (secretCode === correctCode && eggModal) {
     eggModal.classList.add("show");
@@ -126,7 +128,7 @@ if (closeBtn) {
   });
 }
 
-// --- Easter Egg: Shift + Bottom Right Click ---
+// -Easter Egg: Shift + Bottom Right Click
 document.addEventListener("click", (event) => {
   const windowWidth = window.innerWidth;
   const windowHeight = window.innerHeight;

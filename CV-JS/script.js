@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // --- CV Data Fetching ---
+  // CV Data Fetching 
   fetch("../Multipage/CV.data.json")
     .then((response) => response.json())
     .then((data) => {

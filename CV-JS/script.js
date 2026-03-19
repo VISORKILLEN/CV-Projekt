@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // CV Data Fetching 
+  // CV Data Fetching
   fetch("../Multipage/CV.data.json")
     .then((response) => response.json())
     .then((data) => {
@@ -64,45 +64,41 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("githubProjects");
   const loading = document.getElementById("loading");
 
-  // Simulate a 2-second network delay for the user experience
-  setTimeout(() => {
-    fetch(`https://api.github.com/users/VISORKILLEN/starred`)
-      .then((response) => {
-        if (!response.ok) throw new Error("Kunde inte hämta data");
-        return response.json();
-      })
-      .then((repos) => {
-        // Remove the loading text once data is ready
-        if (loading) loading.remove();
+  fetch(`https://api.github.com/users/VISORKILLEN/starred`)
+    .then((response) => {
+      if (!response.ok) throw new Error("Kunde inte hämta data");
+      return response.json();
+    })
+    .then((repos) => {
+      // Remove the loading text once data is ready
+      if (loading) loading.remove();
 
-        // Sort repositories by latest update
-        repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+      // Sort repositories by latest update
+      repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
-        repos.forEach((repo) => {
-          // Skip forked projects
-          if (repo.fork) return;
+      repos.forEach((repo) => {
+        // Skip forked projects
+        if (repo.fork) return;
 
-          const card = document.createElement("div");
-          card.classList.add("card");
+        const card = document.createElement("div");
+        card.classList.add("card");
 
-          card.innerHTML = `
+        card.innerHTML = `
             <h2>${repo.name}</h2>
             <p>${repo.description ? repo.description : "Ingen beskrivning tillagd"}</p>
             <a href="${repo.html_url}" target="_blank" class="button">Visa på GitHub</a>
-          `;
+            `;
 
-          container.appendChild(card);
-        });
-      })
-      .catch((error) => {
-        // Update text if fetch fails
-        if (loading) {
-          loading.textContent = "Kunde inte ladda GitHub-projekt!";
-        }
-        console.error("GitHub Fetch Error:", error);
+        container.appendChild(card);
       });
-    // 2000ms delay
-  }, 2000);
+    })
+    .catch((error) => {
+      // Update text if fetch fails
+      if (loading) {
+        loading.textContent = "Kunde inte ladda GitHub-projekt!";
+      }
+      console.error("GitHub Fetch Error:", error);
+    });
 });
 
 // Easter Egg: Key Sequence "789"
@@ -139,7 +135,6 @@ document.addEventListener("click", (event) => {
     event.clientX > windowWidth - 40 &&
     event.clientY > windowHeight - 40
   ) {
-    document.body.style.background = "yellow";
-    document.body.style.color = "blue";
+    document.body.classList.toggle("easter-egg-active");
   }
 });
